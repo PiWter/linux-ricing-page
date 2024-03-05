@@ -1,0 +1,258 @@
+/*********************QUITAR BARRA DE DESPLAZAMIENTO*********************/
+html {
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-width: none;
+  user-select: none;
+}
+/***********************************BACKGROUND***********************************/
+
+body{
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-family: "Courier New";
+}
+
+:root {
+  --background: image-set(url('bg/gruv.jpg') type('image/jpg'), url('bg/gruv.jpg') type('image/jpg'));
+}
+
+#background {
+  position: fixed;
+  z-index: -1;
+  filter: blur(1px) brightness(.7);
+  inset: -30px;
+  background-color: #222;
+}
+
+#background>div {
+  position: absolute;
+  inset: 0;
+  background: var(--background) center/cover no-repeat;
+}
+
+/*********************MENÚ DE NAVEGACIÓN SUPERIOR*********************/
+
+.top-header{
+  width: 95%;
+  height: 50px;
+  z-index: 100;
+  background-color:rgba(37, 37, 37, .4);
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.top-header ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+.hora{
+  float: right;
+  padding-right: 20px;
+}
+
+.escritorios{
+  float: left;
+}
+
+.foto{
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  z-index: 200; 
+  margin-top: -50px;
+}
+
+.foto:hover{
+  width: 38px;
+  height: 38px;
+}
+
+/**************************TERMINAL**************************/
+
+.terminal{
+  margin-top: 150px;
+  height: 400px;
+  width: 600px;
+  background-color: rgba(30, 30, 30, .8, .7); 
+  border: #252525 1px solid;
+  border-radius: 5px;
+  backdrop-filter: blur(7px) brightness(.7);
+}
+
+.neofetch{
+  color: #ffffff;
+  opacity: 1;
+  margin-left: 9px;
+  animation: ter 0.3s steps(8) 1s 1 normal both, terblink 1s steps(1) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #ffffff;
+  color: aliceblue;
+}
+
+@keyframes ter {
+  from {
+    width: 23.5%;
+  }
+  to {
+    width: 37%;
+  }
+}
+
+@keyframes terblink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.neofetchContent{
+  opacity: 1;
+  margin-left: 9px;
+  animation: neo 0.2s steps(35) 1s 1 normal both;
+  animation-delay: 1.5s;
+  margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgb(150, 218, 255);
+}
+
+@keyframes neo {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+/***************************CONTENIDO***************************/
+.contenido{
+  display: grid;
+  margin-top: 400px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  place-items: center;
+}
+
+.titulo{
+  text-align: center;
+  filter: blur(0px);
+  font-size: 50px;
+}
+
+.fila1{
+  display: grid;
+  height: 260px;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  margin-top: -40px;
+}
+
+.explicacion-titulo{
+  font-size: 30px;
+}
+
+.explicacion{
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 30px;
+  height: 300px;
+  background-color: #0a0c0d;
+  font-size: 20px;
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.conceptos-titulo{
+  font-size: 30px;
+}
+
+.conceptos{
+  float: right;
+  margin-right: 30px;
+  text-align: center;
+  border-radius: 15px;
+  height: 300px;
+  background-color: #0a0c0d;
+  font-size: 20px;
+  padding: 30px;
+  margin-left: 20px;
+}
+
+.tutorial-titulo{
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: -40px;
+}
+
+.ejemplos-titulo{
+  font-size: 30px;
+  margin-bottom: -60px;
+}
+
+/*******************FLIP CARD*******************/
+
+.desktops{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.flip-card {
+  background-color: transparent;
+  border: #b9b9b9 1px solid;
+  width: 230px;
+  height: 130px;
+  perspective: 1000px; 
+  margin: 30px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; 
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); 
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb; 
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #1c1b22;
+  color: white;
+  transform: rotateY(180deg); 
+}
+
+@media screen and (max-width: 1180px) {
+
+  .desktops{
+    grid-template-columns: 50% 50%;
+  }
+
+}
+
+
+/*
+@media screen and (max-width: 885px) {
+  .fila1{
+    grid-template-columns: 100%;
+  }
+}*/
