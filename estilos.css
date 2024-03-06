@@ -130,7 +130,7 @@ body{
 /***************************CONTENIDO***************************/
 .contenido{
   display: grid;
-  margin-top: 400px;
+  margin-top: 800px;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0, 0);
