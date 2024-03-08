@@ -67,11 +67,6 @@ body{
   color: #aaaaaa;
 }
 
-.home{
-  z-index: 200;
-}
-
-
 .home a{
   display: grid;
 }
