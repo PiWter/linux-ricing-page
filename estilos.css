@@ -69,7 +69,11 @@ body{
 
 .home{
   z-index: 200;
-  margin-top: 4px;
+}
+
+
+.home a{
+  display: grid;
 }
 
 .creacion{
