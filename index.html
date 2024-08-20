@@ -1,137 +1,212 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
+  <head>
     <title>Ricing Linux</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
     <link rel="shortcut icon" href="assets/icon.png" />
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script src="./script.js" type="module"></script>
+  </head>
 
-<body>
-
+  <body>
     <div id="top"></div>
 
     <div id="background">
-        <div></div>
+      <div></div>
     </div>
 
     <div class="top-header">
-        <div class="escritorios"><p> ◉ <span style="font-size: 20.7px;"> ○ ○ ○ ○ ○ ○ ○</span></p></div>
-        <div><a class="conceptos-top" href="#conceptos">Conceptos</a></div>
-        <div class="home"><a href="#top"><img class="foto" src="assets/icon.png"></a></div>
-        <div><a class="creacion" href="rice-tutorial/rice-tutorial.html">Creación de un rice</a></div>
-        <div class="hora"></div>
-    </div>    
+      <div class="escritorios">
+        <p>◉ <span style="font-size: 20.7px"> ○ ○ ○ ○ ○ ○ ○</span></p>
+      </div>
+      <div><a class="conceptos-top" href="#conceptos">Conceptos</a></div>
+      <div class="home">
+        <a href="#top"><img class="foto" src="assets/icon.png" /></a>
+      </div>
+      <div>
+        <a class="creacion" href="rice-tutorial/rice-tutorial.html"
+          >Creación de un rice</a
+        >
+      </div>
+      <div class="hora"></div>
+    </div>
 
     <div class="terminal">
-        <p class="neofetch"><span style="color:rgb(103, 92, 255)">ricing@linux</span>:<span style="color:rgb(0, 128, 255)">~</span> neofetch</p>
-        <p class="neofetchContent">
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OS: <span style="color:rgb(255, 255, 255)">Arch Linux</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Host: <span style="color:rgb(255, 255, 255)">Host name</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kernel: <span style="color:rgb(255, 255, 255)">5.15.112</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uptime: <span style="color:rgb(255, 255, 255)">3 hours, 5 mins</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packages: <span style="color:rgb(255, 255, 255)">1058 (rpm)</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#############&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shell: <span style="color:rgb(255, 255, 255)">Bash</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###############&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kernel: <span style="color:rgb(255, 255, 255)">bash 5.1.8</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WM: <span style="color:rgb(255, 255, 255)">dwm</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terminal: <span style="color:rgb(255, 255, 255)">Alacritty</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPU: <span style="color:rgb(255, 255, 255)">Intel core I5</span><br>
-            &nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPU: <span style="color:rgb(255, 255, 255)">Nvidia GeForce 3090</span><br>
-            &nbsp;&nbsp;#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Memory: <span style="color:rgb(255, 255, 255)">1024 / 8000</span><br>
-            &nbsp;####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;####&nbsp;<br>
-            ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###<br>
-        </p>
-        
+      <p class="neofetch">
+        <span style="color: rgb(103, 92, 255)">ricing@linux</span>:<span
+          style="color: rgb(0, 128, 255)"
+          >~</span
+        >
+        neofetch
+      </p>
+      <p class="neofetchContent">
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OS:
+        <span style="color: rgb(255, 255, 255)">Arch Linux</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Host:
+        <span style="color: rgb(255, 255, 255)">Host name</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kernel:
+        <span style="color: rgb(255, 255, 255)">5.15.112</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uptime:
+        <span style="color: rgb(255, 255, 255)">3 hours, 5 mins</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###########&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packages:
+        <span style="color: rgb(255, 255, 255)">1058 (rpm)</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#############&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shell:
+        <span style="color: rgb(255, 255, 255)">Bash</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###############&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kernel:
+        <span style="color: rgb(255, 255, 255)">bash 5.1.8</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WM:
+        <span style="color: rgb(255, 255, 255)">dwm</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terminal:
+        <span style="color: rgb(255, 255, 255)">Alacritty</span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPU:
+        <span style="color: rgb(255, 255, 255)">Intel core I5</span><br />
+        &nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#######&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPU:
+        <span style="color: rgb(255, 255, 255)">Nvidia GeForce 3090</span><br />
+        &nbsp;&nbsp;#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Memory:
+        <span style="color: rgb(255, 255, 255)">1024 / 8000</span><br />
+        &nbsp;####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;####&nbsp;<br />
+        ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;###<br />
+      </p>
     </div>
 
     <div id="conceptos" class="contenido">
-        <p class="titulo">RICING LINUX</p>
-        <div class="fila1">
-    
-            <div class="explicacion">
-                <p class="explicacion-titulo">QUÉ ES</p>
-                <p class="explicacion-contenido">Resumidamente, Ricing Linux es el nombre que se le da a la 
-                    personalización de la interfaz de usuario 
-                    en sistemas operativos Linux para que quede 
-                    acorde a los gustos del usuario y que a su vez 
-                    sea práctica a la hora de utilizarla.</p>
-            </div>
-
-            <div class="conceptos">
-                <p class="conceptos-titulo">WINDOW MANAGERS</p>
-                <p class="conceptos-explicacion">Los window managers o gestores
-                    de ventanas son lo más usado para los rices en Linux ya que 
-                    son sencillos de personalizar y bastante eficientes a la hora
-                    de trabajar. Algunos ejemplos son qtile, bspwm, i3wm o dwm.
-                </p>
-            </div>
+      <p class="titulo">RICING LINUX</p>
+      <div class="fila1">
+        <div class="explicacion">
+          <p class="explicacion-titulo">QUÉ ES</p>
+          <p class="explicacion-contenido">
+            Resumidamente, Ricing Linux es el nombre que se le da a la
+            personalización de la interfaz de usuario en sistemas operativos
+            Linux para que quede acorde a los gustos del usuario y que a su vez
+            sea práctica a la hora de utilizarla.
+          </p>
         </div>
 
-        <p class="tutorial-titulo">TUTORIAL</p>
+        <div class="conceptos">
+          <p class="conceptos-titulo">WINDOW MANAGERS</p>
+          <p class="conceptos-explicacion">
+            Los window managers o gestores de ventanas son lo más usado para los
+            rices en Linux ya que son sencillos de personalizar y bastante
+            eficientes a la hora de trabajar. Algunos ejemplos son qtile, bspwm,
+            i3wm o dwm.
+          </p>
+        </div>
+      </div>
 
-        <iframe width="95%" height="600px" src="https://www.youtube.com/embed/SRqVuAUP2N0?si=mb5x0OlhakGvd-7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p class="tutorial-titulo">TUTORIAL</p>
 
-        <p class="ejemplos-titulo">EJEMPLOS</p>
+      <iframe
+        width="95%"
+        height="600px"
+        src="https://www.youtube.com/embed/SRqVuAUP2N0?si=mb5x0OlhakGvd-7N"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
 
-        <div class="desktops">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img height="130px" width="230px" src="assets/desktop1.webp" alt="">
-                </div>
-                <div class="flip-card-back">
-                    <h2>ABRIR</h2>
-                    <a href="https://www.reddit.com/r/unixporn/comments/1b5qo17/cinnamon_i_kinda_like_how_the_tokyo_theme_fits/" target="_blank" ><img height="50px" width="50px" src="assets/redditlogo.png" alt=""></a>
-                </div>
-                </div>
+      <p class="ejemplos-titulo">EJEMPLOS</p>
+
+      <div class="desktops">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                height="130px"
+                width="230px"
+                src="assets/desktop1.webp"
+                alt=""
+              />
             </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img height="130px" width="230px" src="assets/desktop2.webp" alt="">
-                </div>
-                <div class="flip-card-back">
-                    <h2>ABRIR</h2>
-                    <a href="https://github.com/Shentxt/NordicBreeze" target="_blank" ><img height="50px" width="50px" src="assets/gitlogo.png" alt=""></a>
-                </div>
-                </div>
+            <div class="flip-card-back">
+              <h2>ABRIR</h2>
+              <a
+                href="https://www.reddit.com/r/unixporn/comments/1b5qo17/cinnamon_i_kinda_like_how_the_tokyo_theme_fits/"
+                target="_blank"
+                ><img
+                  height="50px"
+                  width="50px"
+                  src="assets/redditlogo.png"
+                  alt=""
+              /></a>
             </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img height="130px" width="230px" src="assets/desktop3.webp" alt="">
-                </div>
-                <div class="flip-card-back">
-                    <h2>ABRIR</h2>
-                    <a href="https://www.reddit.com/r/unixporn/comments/1b5nb4h/i3_new_to_linux_and_first_time_ever_using_a/" target="_blank" ><img height="50px" width="50px" src="assets/redditlogo.png" alt=""></a>
-                </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img height="130px" width="230px" src="assets/desktop4.webp" alt="">
-                </div>
-                <div class="flip-card-back">
-                    <h2>ABRIR</h2>
-                    <a href="https://github.com/y0nza1/config" target="_blank" ><img height="50px" width="50px" src="assets/gitlogo.png" alt=""></a>
-                </div>
-                </div>
-            </div>
+          </div>
         </div>
 
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                height="130px"
+                width="230px"
+                src="assets/desktop2.webp"
+                alt=""
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>ABRIR</h2>
+              <a href="https://github.com/Shentxt/NordicBreeze" target="_blank"
+                ><img
+                  height="50px"
+                  width="50px"
+                  src="assets/gitlogo.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
 
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                height="130px"
+                width="230px"
+                src="assets/desktop3.webp"
+                alt=""
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>ABRIR</h2>
+              <a
+                href="https://www.reddit.com/r/unixporn/comments/1b5nb4h/i3_new_to_linux_and_first_time_ever_using_a/"
+                target="_blank"
+                ><img
+                  height="50px"
+                  width="50px"
+                  src="assets/redditlogo.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                height="130px"
+                width="230px"
+                src="assets/desktop4.webp"
+                alt=""
+              />
+            </div>
+            <div class="flip-card-back">
+              <h2>ABRIR</h2>
+              <a href="https://github.com/y0nza1/config" target="_blank"
+                ><img
+                  height="50px"
+                  width="50px"
+                  src="assets/gitlogo.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="script.js" />
-
-</body>
-
+  </body>
 </html>
